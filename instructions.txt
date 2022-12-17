@@ -1,0 +1,21 @@
+General description: these are the primary donation data analyzed in the paper, "Examining charitable giving in real-world online donations" published in Nature Communications in 2019 by Sisco and Weber. Each row represents one donation. 
+
+-------Variables:
+
+amount_donated - the amount donated in US dollars.
+
+
+campaign_ID - an encrypted identifier for the campaign_ID. You can use this to tell which donations were made to the same campaign but not to trace the raw data back to the unencrypted campaign_ID. The encryption is to protect the privacy of the campaign creators and donors.
+
+
+category - the category of each campaign.
+
+
+anonymous - whether or not the donation was made anonymously to the public.
+
+
+gender - The gender of the current donor. "F" represents female and "M" represents male. These genders were estimated based on the public names of the donors. The algorithm used is provided in the supplementary materials for the paper.
+
+same_last_name - "1" means that the donor and the recipient had the same last name. "0" means that they did not (from what we could infer based on publicly displayed names). 
+
+empathy - "1" means that an expression of empathy was detected in the message left by the current donor. "0" means that no expression of empathy was detected. The algorithm used is provided in the supplementary materials for the paper.
